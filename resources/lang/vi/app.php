@@ -23,4 +23,10 @@ return [
     'please_confirm' => 'Vui lòng xác nhận mật khẩu trước khi tiếp tục.',
     'click_here' => 'ấn vào liên kết để gửi yêu cầu khác',
     'lang' => 'Ngôn ngữ',
+    'please_confirm' => 'Vui lòng xác nhận mật khẩu trước khi tiếp tục.',
+    'click_here' => 'ấn vào liên kết để gửi yêu cầu khác',
+    'lang' => 'Ngôn ngữ',
+    'task_list' => 'Danh sách Task',
+    'please_confirm' => 'Vui lòng xác nhận mật khẩu trước khi tiếp tục.',
+    'click_here' => 'ấn vào liên kết để gửi yêu cầu khác',
 ];
