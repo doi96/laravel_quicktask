@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\TaskRequets;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -16,6 +17,7 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index(Request $request)
     {
         return view('tasks.index');
@@ -37,9 +39,14 @@ class TaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+
+     public function store(TaskRequets $request)
     {
-        //
+        $request->user()->tasks()->create([
+            'name' => $request->name,
+        ]);
+
+        return back();
     }
 
     /**
